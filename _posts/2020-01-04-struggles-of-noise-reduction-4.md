@@ -3,6 +3,8 @@ layout: post
 title: Struggles of noise reduction in RTC — Part 3
 ---
 
+![image](https://user-images.githubusercontent.com/25403969/105566118-7b294080-5d50-11eb-81cd-8fca3aff7892.png)
+
 ## The Epilogue
 
 Finally — after going through the deprecated/non-optimal ways of approaching Noise reduction, let us use the ideal way now! AudioWorklets, it is!
