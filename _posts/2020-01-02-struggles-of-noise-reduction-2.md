@@ -3,6 +3,8 @@ layout: post
 title: Struggles of noise reduction in RTC — Part 2
 ---
 
+![image](https://user-images.githubusercontent.com/25403969/105566179-c2afcc80-5d50-11eb-8c9f-74d320f06d94.png)
+
 ## The simple approach
 
 I’ll be going through noise reduction in these blogs in the same way in which I personally learned and implemented noise reduction at p2p.inc
