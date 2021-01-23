@@ -89,6 +89,7 @@ It's funny to think, but we need to explicity define these inorder to make sure 
 
 While this is a no brainer at the first look, there are many things which will not show up the same way they do on mac vs on windows! This further emphasizes the fact that development teams need to ensure that they use a variety OS's while developing / performing QA even if electron has a general perception of being `set-it-up once and run it on any OS`.
 We ran into this while adding a visual view to the working timer that employee's run while working - this timer gets displayed and refreshed by the tray's title - an API only available on mac!
+
 ![image](https://user-images.githubusercontent.com/25403969/105565039-d48e7100-5d4a-11eb-8669-d42c6bb4064b.png)
 
 These were the things I came across while developing a cross-platform app using electron! Hope this proves helpful to your team !
