@@ -3,6 +3,8 @@ layout: post
 title: Electron - Getting the tray right
 ---
 
+![image](https://user-images.githubusercontent.com/25403969/105566277-45388c00-5d51-11eb-9359-f917d39ee833.png)
+
 Electron has been coming up as the choice of frame work to be used when porting a project which was formerly a web app to a desktop app (or adding additional functionalities when using the web app over on desktop - the case we handled at P2P.inc)
 
 ## Problems with the default setup
