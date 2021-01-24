@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Struggles of noise reduction in RTC — Part 3
+title: Struggles of noise reduction in RTC — Part 4
 ---
 
 ## The Epilogue
