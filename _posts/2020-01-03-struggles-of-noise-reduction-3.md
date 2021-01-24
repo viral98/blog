@@ -3,6 +3,7 @@ layout: post
 title: Struggles of noise reduction in RTC — Part 3
 ---
 
+![image](https://user-images.githubusercontent.com/25403969/105566149-9431f180-5d50-11eb-9d46-53c28fc5b948.png)
 
 Moving on from the barebones filter-based implementation we checked in Part 2 which you can check out here, any firm that has a business model based around RTC would wish to implement a more robust, all-encompassing NR module.
 The best example to take for this series would be the current industry standard, RNNoise. If we check out their demo, inspecting the page, we’d find dumps to their files for using RNNoise in the most non-BS, straightforward way if you know basic web audio API standards and how to pass in your input stream.
@@ -18,6 +19,8 @@ var noiseNode = audioContext.createScriptProcessor(bufferSize, 1, 1);
 
 On top of this, looking closely, we see that they opt for a bufferSize of 16k. Keep this in mind, as we move forward.
 Checking out the documentation for scriptProcessorNode, we get greeted with this big red wall of text
+
+![image](https://user-images.githubusercontent.com/25403969/105566158-a4e26780-5d50-11eb-9dcf-571de4c2f02d.png)
 
 While it is deprecated, startups might just wish to use it because of the fact that there is a whole lot of code available for it and not a whole lot of code/documentation for its successor, the audioWorklet. Here’s where we start running into problems
 ScriptProcessorNode, is essentially a zero-sum API, in the sense, something has to be lost in order to achieve gains somewhere else. In the case of scriptProcessorNode, you got to pay a high computational & latency cost for good processing.

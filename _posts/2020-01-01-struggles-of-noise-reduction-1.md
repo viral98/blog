@@ -3,6 +3,8 @@ layout: post
 title: Struggles of noise reduction in RTC — Part 1
 ---
 
+![image](https://user-images.githubusercontent.com/25403969/105566197-da875080-5d50-11eb-8b62-8b542c86fcbd.png)
+
 ## Prologue
 
 In just about all the apps we use for real-time communications i.e. calling, there is some level of noise reduction offered. This is due to the fact, the internet is filled with extremely heterogeneous devices, with microphones ranging from a whole variety of configurations. Thus all of these introduce a different level of unwanted frequencies and noises into the webRTC stream these apps use.
