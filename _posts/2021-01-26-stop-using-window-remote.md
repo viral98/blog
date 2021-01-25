@@ -32,5 +32,7 @@ Taking off from point 2, as remote essentially acts as a proxy for underlying AP
 
 ### Conclusion
 
+![image](https://user-images.githubusercontent.com/25403969/105778382-56bca680-5f92-11eb-9e80-63af8b45c16b.png)
+
 Use IPC!! No, seriously - in an ideal world the communication between your main and renderer should be minimised, but we realise that that's difficult to do when building apps that do infact rely on those underlying APIs, in such a case, using IPC would be a great way to counter this issue. Sure, its more work than using window.remote, but its much much safer and to do so and sooner or later, remote is going to be deprecated, its better to spend a few days to move infra away from remote and to IPC!
 Specifically, ipc.invoke would be the best choice if you are running an electron version above 7 as it would allow the use of async await, hence circumventing the unexpected issues caused by the remote module at times + remove the need for adding listeners, hence making your code cleaner, infact!
