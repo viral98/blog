@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Stop using window.remote() now!
+title: Stop using window.remote!
 ---
 ![image](https://user-images.githubusercontent.com/25403969/105672660-cdae5c80-5f0a-11eb-97cd-32ece63c1ab6.png)
 
