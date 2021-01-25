@@ -14,7 +14,7 @@ Because it's convinient! You see, remote provides access to pretty much most of 
 
 ### Argument 1 (And probably the most important one, in my opinion) - Main process cannot block waiting for renderer to return result
 
-The alternative to remote, i.e. ipc calls, allow us to call them via .handle() and .invoke() both of which allow us to use async-await strategies which is a key feature in a lot of these remote API usage! Think about scenarios where you need results before proceeding further! Qouting from another great article on this issue "When you pass a function as a callback to a remote method, then calling that callback from the main process will always return undefined" <https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31#d978>
+The alternative to remote, i.e. ipc calls, allow us to call them via .handle() and .invoke() both of which allow us to use async-await strategies which is a key feature in a lot of these remote API usage! Think about scenarios where you need results before proceeding further! Quoting from another great article on this issue "When you pass a function as a callback to a remote method, then calling that callback from the main process will always return undefined" <https://medium.com/@nornagon/electrons-remote-module-considered-harmful-70d69500f31#d978>
 
 ### Argument 2 - Remote Objects !== Regular Objects
 
