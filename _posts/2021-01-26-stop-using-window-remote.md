@@ -30,7 +30,7 @@ This is a good counter point - however, it doesn't help when your app relies hea
 
 Taking off from point 2, as remote essentially acts as a proxy for underlying APIs, this whole routing takes some toll. How big of a toll? About x10,000 slower than actually accessing those objects via IPC! How big of a difference is this in terms of perception? 0, atleast in my case. We shifted our whole app to use IPC only, and the difference isn't that huge, in terms of performance atleast.
 
-### Conclusion
+## Conclusion
 
 ![image](https://user-images.githubusercontent.com/25403969/105778382-56bca680-5f92-11eb-9e80-63af8b45c16b.png)
 
