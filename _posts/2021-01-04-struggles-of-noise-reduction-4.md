@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Struggles of noise reduction in RTC — Part 3
+title: Struggles of noise reduction in RTC — Part 4
 ---
 
 ![image](https://user-images.githubusercontent.com/25403969/105566118-7b294080-5d50-11eb-81cd-8fca3aff7892.png)
