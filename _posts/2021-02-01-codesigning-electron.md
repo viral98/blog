@@ -2,10 +2,9 @@
 layout: post
 title: Signing your electron app!
 ---
+![image](https://cdn.rawgit.com/electron/electron/f083380c3838242ae19cd1d8cb42c466b90c183a//docs/images/gatekeeper.png)
 
 ## Pre-requisites
-
-![image](https://cdn.rawgit.com/electron/electron/f083380c3838242ae19cd1d8cb42c466b90c183a//docs/images/gatekeeper.png)
 
 ### Certificates
 
