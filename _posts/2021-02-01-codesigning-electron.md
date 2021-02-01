@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From the eyes of a Junior Developer -  Signing your electron app!
+title: Signing your electron app!
 ---
 
 ## Pre-requisites
