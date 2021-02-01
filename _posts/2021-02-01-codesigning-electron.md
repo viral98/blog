@@ -5,6 +5,8 @@ title: Signing your electron app!
 
 ## Pre-requisites
 
+![image](https://cdn.rawgit.com/electron/electron/f083380c3838242ae19cd1d8cb42c466b90c183a//docs/images/gatekeeper.png)
+
 ### Certificates
 
 Your auto updation doesn't necessarily require certificates, but its honestly worthless to incorporate autoupdates without this - Especially in MacOS, you wont be able to distribute your app at all to begin with, leading to a situation where you build the app and auto update your own app. Buy the certificates for the respective platforms. I'll be assuming you have the certificates handy!
