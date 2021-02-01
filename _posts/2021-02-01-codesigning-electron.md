@@ -8,19 +8,17 @@ title: Signing your electron app!
 
 ### Certificates
 
-Your auto updation doesn't necessarily require certificates, but its honestly worthless to incorporate autoupdates without this - Especially in MacOS, you wont be able to distribute your app at all to begin with, leading to a situation where you build the app and auto update your own app. Buy the certificates for the respective platforms. I'll be assuming you have the certificates handy!
+Your auto update doesn’t necessarily require certificates, but it's honestly worthless to incorporate auto-updates without this - Especially in MacOS, you won't be able to distribute your app at all, to begin with, leading to a situation where you build the app and auto-update your own app. Buy the certificates for the respective platforms. I’ll be assuming you have the certificates handy!
 
 ### Some CI platform for releases
 
-From a PR merger -> updating the desktop app at the client's end there are a whole lot of things which need to happen in order to get this module working correctly. You can opt to do all of this manually, but having a CI makes life a lot lot easier.
+From a PR merger -> updating the desktop app at the client’s end there are a whole lot of things that need to happen in order to get this module working correctly. You can opt to do all of this manually, but having a CI makes life a lot easier.
 
 ## Getting Started
 
-Code Signing for someone having no experience with actual development and handling fancy infrastructure handling tools is DAUNTING. However, it can be streamlined fairly easily.
-Your autoupdates essentially rely on two major modules
+Code Signing for someone having no experience with actual development and handling fancy infrastructure handling tools is DAUNTING. However, it can be streamlined fairly easily. Your auto-updates essentially rely on two major modules
 
-However, we need this, period. Code signing is a non negotiable thing which you should set up early on in the development phases.
-For windows, it requires you to buy a digicert based certificate (there are other fancier & more pricey methods but for most startups, this is the sweet spot for ROI). Things over on the apple side of things are pretty straightforwad. Just make a project in your developer account!
+However, we need this, period. Code signing is a non-negotiable thing that you should set up early on in the development phases. For windows, it requires you to buy a DigiCert based certificate (there are other fancier & more pricey methods but for most startups, this is the sweet spot for ROI). Things over on the apple side of things are pretty straightforward. Just make a project in your developer account!
 
 ### For Mac
 
@@ -84,5 +82,5 @@ The large difference in the certificate types/authorities is why I am not specif
 
 ## Closing notes
 
-I cannot emphasize this enough, use a CI tool. Your certificates need to be shoved somewhere safe and developers shouldnt directly interact with them as far as possible. Circle, for example, doesn't allow reading the env variables once they are set to other developers.
-Also, getting code signing up and running might not sound fun/business need at the start of the project but getting this module right, takes time especially for windows, its better to start early on.
+I cannot emphasize this enough, use a CI tool. Your certificates need to be shoved somewhere safe and developers shouldn't directly interact with them as far as possible. Circle, for example, doesn't allow reading the env variables once they are set to other developers.
+Also, getting code signing up and running might not sound fun/business need at the start of the project but getting this module right, takes time especially for windows, it's better to start early on.
