@@ -16,7 +16,7 @@ From a PR merger -> updating the desktop app at the client’s end there are a w
 
 ## Getting Started
 
-Code Signing for someone having no experience with actual development and handling fancy infrastructure handling tools is DAUNTING. However, it can be streamlined fairly easily. Your auto-updates essentially rely on two major modules
+Code Signing for someone having no experience with actual development and handling fancy infrastructure tools is DAUNTING. However, it can be streamlined fairly easily. Your auto-updates essentially rely on two major modules
 
 However, we need this, period. Code signing is a non-negotiable thing that you should set up early on in the development phases. For windows, it requires you to buy a DigiCert based certificate (there are other fancier & more pricey methods but for most startups, this is the sweet spot for ROI). Things over on the apple side of things are pretty straightforward. Just make a project in your developer account!
 
