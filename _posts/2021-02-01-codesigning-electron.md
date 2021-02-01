@@ -71,7 +71,7 @@ Once you upload it to ci, fetch your certificate password and in the YOUR_CI_TOO
 
 Now all you got to do is configure this script to be called once your build is done
 
-Assuming you are using electron-builder, then in the afterSign property, add afterSign: shouldSign ? "script/notarize.js" : undefined  where should sign is essentially a variable indicating that your env isnt local and you are running on circle (you can check that by const runningOnCI= process.env.CI_TOOL === "true";)
+Assuming you are using electron-builder, then in the afterSign property, add afterSign: shouldSign ? "script/notarize.js" : undefined  where should sign is essentially a variable indicating that your env isnt local and you are running on your CI tool (you can check that by const runningOnCI= process.env.CI_TOOL === "true";)
 This would come under the build configuration file for your CI tool
 
 ### Windows
