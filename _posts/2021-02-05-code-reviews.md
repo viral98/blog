@@ -9,7 +9,7 @@ Entering industry as full time SDE, I came in with the idea that the fact that I
 To this date, I remember my first ever PR had 50+ comments with multiple changes requested, this seems extremely negative at first, because a lot of the changes requested seem extremely pedantic at the moment, but looking at it in hindsight I really feel, code reviews hands down are the best thing to happen to a junior developer - they might just provide you more value than the "online courses" or the "Tricky interview questions for X language" videos.
 Note, this article does assume the fact that your senior developers are not toxic and are genuinely providing good reviews. Good reviews !== Easy reviews. Good reviews are the ones where the senior developer encapsulates  his thought process behind requesting changes.
 
-This what good code reviews look like - mistakes pointed out clearly, with links to the bits which are actually wrong along with the expectations of the developer
+This what a good code review look like - mistakes pointed out clearly, with links to the bits which are actually wrong along with the expectations of the developer
 ![image](https://user-images.githubusercontent.com/25403969/106691589-c584aa00-65f9-11eb-8338-d82faa7c3496.png)
 After this review, I clearly know that action creators must never have any side effects in them, and that remains at the back of my head. Think about this while interviewing for react - Candidate A describes action creators, whereas candiadate B not only describes them but also describes how they must be used. Who do you think would be selected all else being equal?
 
