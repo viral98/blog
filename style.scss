@@ -62,7 +62,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: white;
 }
 
 p {
@@ -118,17 +118,17 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: white;
 }
 
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
-  background: $lightGray;
+  background: white;
 }
 ::selection {
   color: $black;
-  background: $lightGray;
+  background: white;
 }
 
 // Nicolas Gallagher's micro clearfix hack
@@ -157,7 +157,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid white;
 
   @include mobile {
     text-align: center;
@@ -203,7 +203,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: white;
   font-size: 16px;
 
   @include mobile {
@@ -244,7 +244,7 @@ nav {
 
 .posts > .post {
   padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid white;
 }
 
 .posts > .post:last-child {
@@ -255,9 +255,9 @@ nav {
 .post {
   blockquote {
     margin: 1.8em .8em;
-    border-left: 2px solid $gray;
+    border-left: 2px solid white;
     padding: 0.1em 1em;
-    color: $gray;
+    color: white;
     font-size: 22px;
     font-style: italic;
   }
@@ -274,8 +274,8 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   background-color: black;
 }
 
