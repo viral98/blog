@@ -45,10 +45,14 @@ ipcMain.handle("SET_STARTUP", (event, start: boolean) => {
 ```
 
 Alright, lets break down this code
-ipcMain/ipcRenderer - As I explained these are the interfaces available on the respective processes to perform invokes/handle invokes
-"SET_STARTUP" - this is the channel, in our car analogy, consider this to be the steering wheel. A car might have multiple such interfaces, like the gas pedal, the brakes, etc. You, the driver, invoke these interfaces.
-start - Just as we move the wheel by a set amount of "Degrees" we need to provide some metadata to these channels - this isn't always necessary, you may write some channels which don't need this metadata at all while some might need it.
-app.setLoginItemSettings ({...}) - think of this as the part of the steering wheel that connects to the axle. This is the last abstraction layer available on electron which then directly speaks with the underlying OS to set the app to start at default on login.
+
+*ipcMain/ipcRenderer* - As I explained these are the interfaces available on the respective processes to perform invokes/handle invokes
+
+*"SET_STARTUP"* - this is the channel, in our car analogy, consider this to be the steering wheel. A car might have multiple such interfaces, like the gas pedal, the brakes, etc. You, the driver, invoke these interfaces.
+
+*start* - Just as we move the wheel by a set amount of "Degrees" we need to provide some metadata to these channels - this isn't always necessary, you may write some channels which don't need this metadata at all while some might need it.
+
+*app.setLoginItemSettings ({...})* - think of this as the part of the steering wheel that connects to the axle. This is the last abstraction layer available on electron which then directly speaks with the underlying OS to set the app to start at default on login.
 
 ## What have I learned over time working with IPC then?
 
