@@ -29,14 +29,14 @@ Say you wish to make your app run whenever the operating system starts up. Surel
 
 So what you'd end up doing is, in your web app you write a function to invoke a specific channel which the main (electron) process is listening to/expects you to invoke
 
-```
+```javascript
 const { ipcRenderer } = window.electron;
  await ipcRenderer.invoke("SET_STARTUP", true);
 ```
 
 This what you'd write in your web app and it would invoke this - the message would travel over on to electron, where you need to write some code which listens for this IPC invoke
 
-```
+```javascript
 ipcMain.handle("SET_STARTUP", (event, start: boolean) => {
   app.setLoginItemSettings({
     openAtLogin: start,
