@@ -27,4 +27,3 @@ Side effects in this context are similar to the side effects we have when we tak
 
 Just like medicines, it's unrealistic to expect all functions to be pure - in fact we want certain functions to behave in a manner dictated by the system state. However, it's best to actually decouple logic that can be considered pure into a separate function.
 This way, we have one less thing to worry about while we debug some intermittent issue plus we can now re-use this at other places with the peace of mind that the function will just do what it's intended to do and nothing else.
-
