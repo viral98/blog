@@ -1,6 +1,6 @@
 ---
 layout: post
-title: From the eyes of a junior developer - Adding Loading fields on Redux sucks and why you should use async mutex!
+title: From the eyes of a junior developer - Adding Loading fields on Redux sucks (sometimes)
 ---
 We have all run into this at some point or other, we wish to perform a whole bunch of tasks, and at the same time prevent some other tasks to happen until we have a response come back from server.
 
