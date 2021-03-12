@@ -12,6 +12,15 @@ Here's the deal - this is technically the lowest hanging solution, and on the su
 
 Debugging this can be an absolute nightmare of a task, even more so when this loading state has not been updated correctly on multiple reducers staggered across stores!
 
+Although, this may not always be a bad thing to do - as one of my collegues rightly pointed out while proof reading this "Using a loading field to control the loading spinner is not the problem itself… If we do need to show a spinner, we need to have a different data to represent this behavior… When we are loading some data into a specific field, some people just use null or undefined on this field to represent the loading state, and use an empty array to represent a not loaded state, but sometimes we need the empty array to represent the ‘no data’ state, or if it is some data that is loaded only after some user action, we need the null or undefined to represent the not-loading state before this user action, so in these cases, it does make sense to have the loading field state"
+
+Furthermore, the loading field might not directly contribute to future problems, but it may be one of the factors, again as rightly described by Leonardo Carrerio,
+"The forever loading state issue is not caused by using the loading field, I see two reasons:
+
+1. Not handling exception cases. If we have an HTTP call to load the data, that can have all the code in the same function/scope using await, we just need to add a try-catch and put on the catch block the code to stop the loading state and show that an error has occurred. But on websockets that we expects a response message from server, then it’s harder, because we may send a message and not get a response at all. So we need to handle that in some way. It can be a timeout, but it’s hard to handle, because we never know if the problem is the delay (the message can arrive after our timeout). Or if it will never arrive. We can handle that by adding options to the user, for example: “Taking too long? cancel or try again“.
+
+2. Using the loading field to control the logic. The logic cannot depend on this loading field. The logic changes, and then the use of this loading will change and is very likely that we will forget to handle some edge case that will make this field to have the wrong value."
+
 ## A not so easy way to tackle this - P-Queue
 
 A P-Queue here refers to a queue which returns a promise hence P-queue (promise-queue)
